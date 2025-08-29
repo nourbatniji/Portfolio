@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/girl.png">
+    <title>Nour's Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="top-nav" id="top-nav">
+        <div class="container">
+            <h1 class="logo">NOUR.</h1>
+            <div class="darkmode">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="dark-mode-icon">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                </label>
+            </div>
+            <i class="fa-solid fa-bars dropdown" onclick="showDropdown()"></i>
+        </div>
+    </nav>
+
+    <nav class="nav-container bottom" id="myNav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button><a href="#contact">Contact</a></button>
+    </nav>
+
+    <div id="dropdown-list">
+        <i class="fa-solid fa-xmark" onclick="closeDropdown()"></i>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button><a href="#contact">Contact</a></button>
+    </div>
+    <header>
+        <div id="header-bg"></div>
+        <div class="home-container">
+            <div data-aos="fade-down">
+                <p>Hello, I'm</p>
+                <h1>Nour Batniji</h1>
+                <p>Frontend Developer</p>
+                <a href="assets/CV-Nour Albattniji.pdf" target="_blank">
+                    <button id="cv-btn">Resume
+                        <i class="fa-solid fa-arrow-right fa-rotate-by"
+                            style="--fa-rotate-angle: -45deg;"></i></button></a>
+                <a href="#about"><button id="about-btn">About</button></a>
+            </div>
+            <div data-aos="fade-up">
+                <img src="assets/code-black.png" class="light" alt="">
+            </div>
+
+            <img src="assets/code-white.png" class="dark" alt="">
+
+            <div data-aos="fade-right" class="accounts">
+                <a href="https://www.linkedin.com/in/nour-batniji-366611311/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/nourbatniji" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:nouralbattniji@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div data-aos="fade-left" class="slide">
+                <a href="#about">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <p>Scroll Down</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <p class="heading">My Introduction</p>
+        <h2>About me</h2>
+        <div class="about-container">
+            <div class="image" data-aos="fade-right">
+                <img src="assets/IMG_0713.jpg" alt="">
+            </div>
+            <div class="content" data-aos="fade-left">
+                <p>I’m a passionate front-end developer pursuing a degree in Computer Engineering at the Islamic
+                    University of Gaza. Alongside my studies, I continue to grow my skills through online learning and
+                    hands-on projects in modern web technologies.</p>
+                <p>I started programming in high school and have since built expertise in HTML, CSS, JavaScript, Python,
+                    and Java, as well as frameworks like React.js and Next.js. One of my key projects is an e-commerce
+                    website developed with React and Tailwind CSS.</p>
+                <p>My goal is to build software that makes a real impact, while constantly learning and improving as a
+                    developer.</p>
+                <span><i class="fa-solid fa-location-dot"></i>Cairo, Egypt</span>
+                <span><i class="fa-regular fa-calendar"></i>Availble for hire</span>
+
+                <div class="badges" data-aos="fade-left">
+                    <span class="box">Problem Solver</span>
+                    <span class="box">Team Player</span>
+                    <span class="box">Fast Learner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <p class="heading">My Abilities</p>
+        <h2>My Experience</h2>
+        <div class="container">
+            <div class="skills-container" data-aos="fade-right">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <p><i class="fa-brands fa-python"></i>Python</p>
+                    <span>50%</span>
+                </div>
+                <div class="progress">
+                    <div id="python-progress-bar"></div>
+                </div>
+
+                <div class="skill">
+                    <p> <i class="fa-brands fa-html5"></i>HTML</p>
+                    <span>95%</span>
+                </div>
+                <div class="progress">
+                    <div id="html-progress-bar"></div>
+                </div>
+
+                <div class="skill">
+                    <p><i class="fa-brands fa-css3"></i>CSS</p>
+                    <span>90%</span>
+                </div>
+                <div class="progress">
+                    <div id="css-progress-bar"></div>
+                </div>
+
+                <div class="skill">
+                    <p><i class="fa-brands fa-js"></i>JavaScript</p>
+                    <span>70%</span>
+                </div>
+                <div class="progress">
+                    <div id="js-progress-bar"></div>
+                </div>
+
+                <div class="skill">
+                    <p><i class="fa-brands fa-react"></i>React.js</p>
+                    <span>60%</span>
+                </div>
+                <div class="progress">
+                    <div id="react-progress-bar"></div>
+                </div>
+
+                <div class="skill">
+                    <p><i class="fa-brands fa-node-js"></i>Next.js</p>
+                    <span>30%</span>
+                </div>
+                <div class="progress">
+                    <div id="next-progress-bar"></div>
+                </div>
+            </div>
+            <div class="education-container">
+                <h3><i class="fa-solid fa-graduation-cap"></i>Education</h3>
+                <div class="education" data-aos="fade-left">
+                    <i class="fa-solid fa-circle circle"></i>
+                    <h4>Bachelor's of Engineering in Computer Engineering</h4>
+
+                    <p>2022-2027</p>
+                    <h5><i class="fa-regular fa-building"></i>Islamic University-Gaza</h5>
+                </div>
+                <div class="education" data-aos="fade-left">
+                    <i class="fa-solid fa-circle circle"></i>
+                    <h4>Fullstack Development Bootcamp</h4>
+
+                    <p>2025</p>
+                    <h5><i class="fa-regular fa-building"></i>Axsos Academy-Palestine</h5>
+                </div>
+                <div class="education" data-aos="fade-left">
+                    <i class="fa-solid fa-circle circle"></i>
+                    <h4>Frontend Development Diploma</h4>
+                    <p>2024-2025</p>
+                    <h5><i class="fa-regular fa-building"></i>Route Academy-Egypt</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="heading">My Portfolio</p>
+        <h2>Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project" data-aos="zoom-in" >
+                <img src="assets/project1.png" class="img1" alt="e-commerce-website-homepage"
+                    onmouseover="changeImagePath(this)">
+                <div class="content">
+                    <h4 class="project-title">E-commerce Website</h4>
+                    <p class="description">A responsive e-commerce website with product browsing, search and filter, shopping cart, and checkout functionality.</p>
+                    <ul class="tools">
+                        <li>React.js</li>
+                        <li>Vite</li>
+                        <li>Tailwind CSS</li>
+                        <li>React Router</li>
+                        <li>Axios</li>
+                    </ul>
+                    <div class="links">
+                        <button>
+                            <a href="https://github.com/nourbatniji/E-commerce" target="_blank">
+                                Repository
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://e-commerce-beta-seven-92.vercel.app/" target="_blank">
+                                Demo
+                                <i class="fa-solid fa-up-right-from-square"></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-aos="zoom-in" >
+                <img src="assets/project2.png" alt="forecast-website-homepage">
+                <div class="content">
+                    <h4 class="project-title">Weather Forecast Website</h4>
+                    <p class="description">A weather website with city search, real-time updates, forecast display, and API integration.</p>
+                    <ul class="tools">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 5</li>
+                        <li>JavaScript</li>
+                        <li>Weather API</li>
+                    </ul>
+                    <div class="links">
+                        <button>
+                            <a href="https://github.com/nourbatniji/Weather-forecast" target="_blank">
+                                Repository
+                                <i class="fa-brands fa-github"></i></a>
+                        </button>
+                        <button>
+                            <a href="https://weatherforecast-drab.vercel.app/" target="_blank">
+                                Demo
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-aos="zoom-in" >
+                <img src="assets/project3.png" alt="restaurant-website-homepage">
+                <div class="content">
+                    <h4 class="project-title">Restaurant Website</h4>
+                    <p class="description">Mealify is a modern restaurantwebssite that highlights chefs, a food gallery,
+                        and contact options.</p>
+                    <ul class="tools">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 5</li>
+                        <li>Media Queries</li>
+                    </ul>
+                    <div class="links">
+                        <button>
+                            <a href="https://github.com/nourbatniji/Mealify" target="_blank">
+                                Repository
+                                <i class="fa-brands fa-github"></i></a>
+                        </button>
+                        <button>
+                            <a href="https://nourbatniji.github.io/Mealify/" target="_blank">
+                                Demo
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-aos="zoom-in" >
+                <img src="assets/project4.png" alt="portfolio-website-homepage">
+                <div class="content">
+                    <h4 class="project-title">Portfolio</h4>
+                    <p class="description">A responsive portfolio with project showcase, categorized galleries, about and contact sections, and smooth navigation for a professional presentation.</p>
+                    <ul class="tools">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 5</li>
+                        <li>Media Queries</li>
+                    </ul>
+                    <div class="links">
+                        <button>
+                            <a href="https://github.com/nourbatniji/DevFolio" target="_blank">
+                                Repository
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </button>
+
+                        <button>
+                            <a href="https://dev-folio-dun.vercel.app" target="_blank">
+                                Demo
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="heading">Get In Touch</p>
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="talk-to-me">
+                <h1 data-aos="fade-right">Talk To Me</h1>
+                <div data-aos="fade-right">
+                    <div class="talk-div">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:nouralbattniji@gmail.com" target="_blank">nour.albattniji@gmail.com</a></p>
+                        <a class="write"
+                            href="mailto:nouralbattniji@gmail.com" target="_blank">Write Me <i
+                                class="fa-regular fa-square-caret-right"></i></a>
+                    </div>
+                    <div class="talk-div">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h3>Whatsapp</h3>
+                        <p>+972 592626307</p>
+                        <a class="write"
+                            href="https://wa.me/972592626307" target="_blank" rel="noopener">Write Me <i
+                                class="fa-regular fa-square-caret-right"></i></a>
+                    </div>
+                    <div class="talk-div">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>Linked in</h3>
+                        <p>Nour Batniji</p>
+                        <a class="write"
+                            href="https://www.linkedin.com/in/nour-batniji-366611311/" target="_blank">Write
+                            Me <i class="fa-regular fa-square-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h1 data-aos="fade-left">Write Me Your Message</h1>
+                <form action="/action_page.php" data-aos="fade-left">
+                    <div class="contact-form-div">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="contact-form-div">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contact-form-div">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Nour Batniji. Built with HTML, CSS & JavaScript.</p>
+        <div>
+            <a href="https://github.com/nourbatniji"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nour-batniji-366611311/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:nouralbattniji@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+@media (min-width: 1280px) {
+    .heading {
+        width: 10%;
+    }
+
+    .top-nav .container {
+        width: 58%;
+    }
+
+    .nav-container {
+        width: 20%;
+    }
+
+    .home-container {
+        width: 58%;
+    }
+
+    .about-container {
+        width: 70%;
+    }
+
+    .skills .container {
+        width: 80%;
+    }
+
+    .projects-container {
+        width: 79%;
+    }
+
+    .contact-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+    .heading {
+        width: 18% !important;
+    }
+
+    .top-nav .container {
+        width: 90%;
+    }
+
+    .nav-container {
+        width: 50%;
+    }
+
+    .home-container {
+        width: 80%;
+    }
+
+    .about-container {
+        width: 96%;
+    }
+
+    .skills .container {
+        width: 96%;
+    }
+
+    .projects-container {
+        width: 90%;
+
+        .project {
+            width: 100%;
+        }
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .top-nav .container {
+        width: 90%;
+    }
+
+    .nav-container {
+        width: 70%;
+    }
+
+    .heading {
+        width: 26% !important;
+    }
+
+    .top-nav .container {
+        width: 94%;
+
+        .dropdown {
+            display: block;
+            font-size: 25px;
+        }
+
+        .darkmode {
+            width: 80%;
+            text-align: end;
+            margin-top: 4px;
+        }
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    #dropdown-list {
+        display: none;
+        border-radius: 20px;
+        position: fixed;
+        width: 94%;
+        margin: 40px auto;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #efefef;
+        padding-top: 40px;
+        padding: 50px 15px 15px 15px;
+        text-align: center;
+        cursor: pointer;
+
+        i {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        li {
+            border-radius: 500px;
+            background-color: var(--main-color);
+            padding: 5px 20px;
+            border: 2px solid var(--main-color);
+            box-shadow: inset 0 1px 1px #ffffff7a;
+            transition: all 0.8s;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            border-radius: 500px;
+            background-color: var(--main-color);
+            padding: 5px 20px;
+            border: 2px solid var(--main-color);
+            box-shadow: inset 0 1px 1px #ffffff7a;
+            transition: all 0.8s;
+            cursor: pointer;
+        }
+
+        li:hover,
+        button:hover {
+            box-shadow: inset -2px -1px 1px #ffffff7a;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--dark-color);
+            width: 100%;
+            padding: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .home-container {
+        width: 80%;
+    }
+
+    .about-container {
+        width: 90%;
+        flex-direction: column;
+
+        .image {
+            width: 80%;
+            margin-bottom: 40px;
+
+            img {
+                top: 10px;
+                left: 10px;
+            }
+        }
+
+        .content {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    .skills .container {
+        width: 96%;
+
+        .education-container {
+            .education {
+                margin-top: 0px !important;
+                margin-bottom: 22px !important;
+            }
+        }
+    }
+
+    .projects-container {
+        width: 90%;
+
+        .project {
+            width: 100%;
+        }
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        width: 47% !important;
+    }
+
+    .top-nav .container {
+        width: 94%;
+
+        .dropdown {
+            display: block;
+            font-size: 25px;
+        }
+
+        .darkmode {
+            width: 80%;
+            text-align: end;
+            margin-top: 4px;
+        }
+    }
+
+    #dropdown-list {
+        display: none;
+        border-radius: 20px;
+        position: fixed;
+        width: 94%;
+        margin: 40px auto;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #efefef;
+        padding-top: 40px;
+        padding: 50px 15px 15px 15px;
+        text-align: center;
+        cursor: pointer;
+
+        i {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        li {
+            border-radius: 500px;
+            background-color: var(--main-color);
+            padding: 5px 20px;
+            border: 2px solid var(--main-color);
+            box-shadow: inset 0 1px 1px #ffffff7a;
+            transition: all 0.8s;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            border-radius: 500px;
+            background-color: var(--main-color);
+            padding: 5px 20px;
+            border: 2px solid var(--main-color);
+            box-shadow: inset 0 1px 1px #ffffff7a;
+            transition: all 0.8s;
+            cursor: pointer;
+        }
+
+        li:hover,
+        button:hover {
+            box-shadow: inset -2px -1px 1px #ffffff7a;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--dark-color);
+            width: 100%;
+            padding: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .home-container {
+        width: 94%;
+        flex-direction: column;
+
+        .dark,
+        .light {
+            margin-top: 0px;
+        }
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .about-container {
+        width: 94%;
+        flex-direction: column;
+
+        .image,
+        .content {
+            width: 100%;
+            margin-bottom: 40px;
+
+            img {
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+
+    .skills .container {
+        width: 94%;
+        flex-direction: column;
+
+        .skills-container {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .education-container {
+            width: 100%;
+        }
+    }
+
+    .projects-container {
+        width: 94%;
+        flex-direction: column;
+
+        .project {
+            width: 100%;
+        }
+    }
+
+    .contact-container {
+        width: 94%;
+        flex-direction: column;
+
+        .talk-to-me,
+        .contact-form {
+            width: 100%;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
