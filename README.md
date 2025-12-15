@@ -45,7 +45,7 @@ It is designed to serve as a central place to showcase my work and provide easy 
 ---
 
 ## 📂 Project Structure
-
+```
 Portfolio/
 │
 ├── index.html # Main HTML file
@@ -58,7 +58,7 @@ Portfolio/
 │ └── main.js
 │
 └── assets/ # Images, icons, and resume
-
+```
 ---
 
 ## 🚀 Live Demo
@@ -81,16 +81,10 @@ https://portfolio-jet-iota-19.vercel.app/
 ## 👤 Author
 
 **Nour Albattniji**  
-Computer Engineering Student & Frontend Developer  
+Computer Engineering Student & Full-stack Developer  
 
 - GitHub: https://github.com/nourbatniji  
 - LinkedIn: https://www.linkedin.com/in/nour-batniji-366611311/  
 - Email: nour.albattniji@gmail.com  
 
 ---
-
-## 📄 License
-
-This project was created for educational purposes as part of the Web Fundamentals course final exam.
-
-
