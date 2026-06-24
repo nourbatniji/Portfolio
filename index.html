@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Nour Ibrahim Albattniji" />
+  <link rel="icon" href="./assets/girl.png" type="image/png">
+  <title>Nour Albatniji | Fullstack Developer</title>
+  <meta name="description" content="Nour Ibrahim Albattniji, aspiring fullstack web developer. Django, React, Next.js. Cairo, Egypt." />
+  <meta property="og:title" content="Nour Albattniji — Fullstack Developer" />
+  <meta property="og:description" content="Aspiring fullstack web developer building end-to-end apps with Django and React." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+      } catch (e) {}
+    }());
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand">NOUR<span class="brand-dot">.</span></a>
+      <button class="icon-btn theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <span class="moon">☾</span><span class="sun">☀</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-id">
+        <div class="status"><span class="pulse"></span> Available for work · Cairo, Egypt</div>
+      </div>
+      <h1 class="hero-name">
+        <span class="line"><span class="anim-up">Nour</span></span>
+        <span class="line"><span class="anim-up">Albatniji</span></span>
+      </h1>
+      <div class="hero-role">
+        Fullstack Developer <span class="sep">|</span> <span class="rotator" id="rotator">Django</span>
+      </div>
+      <p class="hero-desc">I build dynamic, user-friendly web applications end to end, from clean Django APIs to responsive React interfaces. Always learning, always shipping.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-solid"><span class="dot"></span>View my work</a>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <!-- <div class="stats-strip reveal">
+    <div class="wrap stats-inner">
+      <div class="stat">
+        <span class="stat-n">660+</span>
+        <span class="stat-l">Hours Coded</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">4</span>
+        <span class="stat-l">Projects Shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">10+</span>
+        <span class="stat-l">Technologies</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">2</span>
+        <span class="stat-l">Bootcamps</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">47+</span>
+        <span class="stat-l">LeetCode Solved</span>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ABOUT -->
+  <section class="section-pad" id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <span class="eyebrow">01 / About</span>
+        <img class="about-photo" src="assets/profile.png" alt="Nour Albattniji" />
+        <p class="about-lead">An aspiring web developer with a passion for turning ideas into <em>dynamic, user-friendly</em> products.</p>
+      </div>
+      <div class="about-body reveal d1">
+        <p>I'm Nour, a developer dedicated to building innovative solutions in collaborative environments. My work spans the full stack: structuring data and APIs on the backend with Python and Django, then bringing them to life with React and modern JavaScript.</p>
+        <p>I care about the details that make software feel good to use: responsiveness, accessibility, and clean, predictable interfaces. I'm continually learning new tools and looking to contribute to projects that have real impact.</p>
+        <div class="about-tags">
+          <span class="tag">Problem solver</span>
+          <span class="tag">Detail-oriented</span>
+          <span class="tag">Team player</span>
+          <span class="tag">Fast learner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section-pad" id="skills">
+    <div class="wrap">
+      <div class="head-row">
+        <div class="reveal">
+          <span class="eyebrow">02 / Toolbox</span>
+          <h2 class="section-title">The stack I build with.</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal tilt">
+          <span class="num">/01</span>
+          <h3>Frontend</h3>
+          <div class="skill-list">
+            <div class="row"><span class="d"></span>React.js</div>
+            <div class="row"><span class="d"></span>Next.js</div>
+            <div class="row"><span class="d"></span>JavaScript &amp; TypeScript</div>
+            <div class="row"><span class="d"></span>Tailwind CSS &amp; Sass</div>
+            <div class="row"><span class="d"></span>Redux · React Router</div>
+          </div>
+        </div>
+        <div class="skill-card reveal d1 tilt">
+          <span class="num">/02</span>
+          <h3>Backend</h3>
+          <div class="skill-list">
+            <div class="row"><span class="d"></span>Python</div>
+            <div class="row"><span class="d"></span>Django</div>
+            <div class="row"><span class="d"></span>Django REST Framework</div>
+            <div class="row"><span class="d"></span>PostgreSQL</div>
+            <div class="row"><span class="d"></span>MySQL</div>
+          </div>
+        </div>
+        <div class="skill-card reveal d2 tilt">
+          <span class="num">/03</span>
+          <h3>Tools &amp; Deploy</h3>
+          <div class="skill-list">
+            <div class="row"><span class="d"></span>Git &amp; GitHub</div>
+            <div class="row"><span class="d"></span>Node.js &amp; npm</div>
+            <div class="row"><span class="d"></span>AWS EC2</div>
+            <div class="row"><span class="d"></span>Vercel &amp; Netlify</div>
+            <div class="row"><span class="d"></span>Axios · REST APIs</div>
+          </div>
+        </div>
+      </div>
+      <div class="marquee reveal">
+        <div class="marquee-track" id="marquee">
+          <span>Python</span><span>Django</span><span>DRF</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>Tailwind</span><span>PostgreSQL</span><span>MySQL</span><span>AWS&nbsp;EC2</span><span>Git</span><span>Java</span><span>C++</span><span>Node.js</span><span>Sass</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="section-pad" id="journey">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">03 / Journey</span>
+        <h2 class="section-title">Education &amp; training.</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-year">2025 – 2026</div>
+          <div class="tl-body">
+            <h3>Full Stack Developer Bootcamp</h3>
+            <div class="org">Axsos Academy · Palestine</div>
+            <p>A 20-week immersive program: 660+ coding hours across web fundamentals, Python, and algorithms &amp; data structures, capped by two complete solo and group projects.</p>
+            <div class="chips"><span>Python</span><span>Django</span><span>Algorithms</span><span>React</span></div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2024 – 2025</div>
+          <div class="tl-body">
+            <h3>Front-End Development Diploma</h3>
+            <div class="org">Route Academy</div>
+            <p>Intensive training in React.js, JavaScript, UI design, and API integration, building dynamic, responsive interfaces with modern front-end tooling.</p>
+            <div class="chips"><span>React</span><span>Redux</span><span>Tailwind</span><span>APIs</span></div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2022 – present</div>
+          <div class="tl-body">
+            <h3>B.Sc. Computer Engineering</h3>
+            <div class="org">Islamic University of Gaza</div>
+            <p>Building strong CS foundations, alongside early training in Python at Gaza Sky Geeks and Java at Vision Plus, covering OOP, data structures, and problem-solving.</p>
+            <div class="chips"><span>C++</span><span>Java</span><span>Data Structures</span><span>OOP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section-pad" id="work">
+    <div class="wrap">
+      <div class="head-row">
+        <div class="reveal">
+          <span class="eyebrow">04 / Selected Work</span>
+          <h2 class="section-title">Things I've built.</h2>
+        </div>
+      </div>
+      <div class="proj-grid">
+
+        <article class="project reveal">
+          <div class="proj-img">
+            <img src="assets/codequest.png" alt="CodeQuest — fullstack coding platform" />
+          </div>
+          <div class="proj-content">
+            <span class="proj-num">01</span>
+            <span class="pn">Axsos Academy</span>
+            <h3>CodeQuest</h3>
+            <p>A full-stack coding platform for practicing programming challenges and managing classrooms, built around problem-solving and structured, guided learning.</p>
+            <div class="proj-tags">
+              <span>Python</span><span>Django</span><span>React.js</span><span>JavaScript</span><span>MySQL</span>
+            </div>
+            <div class="proj-links">
+              <a href="http://13.60.37.49" target="_blank" rel="noopener noreferrer">Live Demo <span class="arr">↗</span></a>
+              <a href="https://github.com/nourbatniji/CodeQuest" target="_blank" rel="noopener noreferrer">Source Code <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="proj-img">
+            <img src="assets/studysync.png" alt="StudySync — exam tracking and Pomodoro app" />
+          </div>
+          <div class="proj-content">
+            <span class="proj-num">02</span>
+            <span class="pn">Axsos Academy</span>
+            <h3>StudySync</h3>
+            <p>A web app for exam tracking and Pomodoro-based study sessions, helping students manage their time and measurably improve productivity.</p>
+            <div class="proj-tags">
+              <span>Python</span><span>Django</span><span>JavaScript</span><span>SQLite</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://nouribrahim.pythonanywhere.com" target="_blank" rel="noopener noreferrer">Live Demo <span class="arr">↗</span></a>
+              <a href="https://github.com/nourbatniji/StudySync" target="_blank" rel="noopener noreferrer">Source Code <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="proj-img">
+            <img src="assets/ecommerce.png" alt="E-Commerce Platform — React store with Redux" />
+          </div>
+          <div class="proj-content">
+            <span class="proj-num">03</span>
+            <span class="pn">Route Academy</span>
+            <h3>E-Commerce Platform</h3>
+            <p>A fully functional store with product browsing, cart, and checkout, built on dynamic routing, robust state management, and secure custom authentication.</p>
+            <div class="proj-tags">
+              <span>React.js</span><span>Redux</span><span>Tailwind</span><span>React Router</span><span>Axios</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://e-commerce-beta-seven-92.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <span class="arr">↗</span></a>
+              <a href="https://github.com/nourbatniji/E-commerce" target="_blank" rel="noopener noreferrer">Source Code <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="proj-img">
+            <img src="assets/weather.png" alt="Weather Dashboard — real-time forecast app" />
+          </div>
+          <div class="proj-content">
+            <span class="proj-num">04</span>
+            <span class="pn">Route Academy</span>
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather powered by WeatherAPI, with user preferences persisted in LocalStorage and a clean, fully responsive layout.</p>
+            <div class="proj-tags">
+              <span>JavaScript</span><span>WeatherAPI</span><span>LocalStorage</span><span>CSS</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://weatherforecast-gf012sxwz-nourrrrs-projects.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <span class="arr">↗</span></a>
+              <a href="https://github.com/nourbatniji/Weather-forecast" target="_blank" rel="noopener noreferrer">Source Code <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section-pad contact" id="contact">
+    <div class="wrap">
+      <span class="eyebrow reveal">05 / Contact</span>
+      <h2 class="big reveal d1">Let's build<br><a href="mailto:nour.albattniji@gmail.com">something.</a></h2>
+      <p class="contact-sub reveal d2">Open to full-stack and front-end roles, freelance work, and collaborations. The fastest way to reach me is email.</p>
+      <div class="contact-rows reveal d2">
+        <a href="mailto:nour.albattniji@gmail.com">✉ nour.albattniji@gmail.com</a>
+        <a href="tel:+201095048036">☎ +20 109 504 8036</a>
+        <a href="https://github.com/nourbatniji" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/nour-batniji-366611311/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p class="c">© <span id="year"></span> Nour Ibrahim Albattniji · Cairo, Egypt</p>
+      <div class="foot-links">
+        <a href="https://github.com/nourbatniji" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/nour-batniji-366611311/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Journey</a>
+    <a href="#work">Work</a>
+    <a href="#contact" class="bottom-nav-cta">Contact</a>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
