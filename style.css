@@ -519,7 +519,7 @@ h1.hero-name .line > span { display: inline-block; }
 .proj-links a:hover .arr { transform: translate(3px, -3px); }
 
 /* ---- Contact ---- */
-.contact { text-align: center; }
+.contact { text-align: center; padding-bottom: 120px; }
 .contact .eyebrow { justify-content: center; }
 .contact .big {
   font-family: var(--display);
