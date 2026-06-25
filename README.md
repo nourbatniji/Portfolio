@@ -2,7 +2,7 @@
 
 Personal portfolio website built with vanilla HTML, CSS, and JavaScript.
 
-🔗 **Live site:** [my-portfolio-ruddy-phi-olqlh2b4a0.vercel.app](https://my-portfolio-ruddy-phi-olqlh2b4a0.vercel.app/#work)
+🔗 **Live site:** [my-portfolio-ruddy-phi-olqlh2b4a0.vercel.app](https://my-portfolio-ruddy-phi-olqlh2b4a0.vercel.app/)
 
 ## Stack
 
