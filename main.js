@@ -63,7 +63,7 @@
         e.target.classList.remove('in');
       }
     });
-  }, { threshold: 0.18, rootMargin: '0px 0px -18% 0px' });
+  }, { threshold: 0.2, rootMargin: '0px 0px -25% 0px' });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
   /* ---- Stat counters ---- */
