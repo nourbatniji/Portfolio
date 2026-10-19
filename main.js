@@ -15,12 +15,12 @@
 
   /* ---- Nav scrolled state ---- */
   var nav = document.getElementById('nav');
-  function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 24); }
+  function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 24); document.getElementById('bottomNav').classList.toggle('nav-visible', window.scrollY > 180); }
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
   /* ---- Hero name slide-up ---- */
-  requestAnimationFrame(function () {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) requestAnimationFrame(function () {
     document.querySelectorAll('.anim-up').forEach(function (el, i) {
       el.style.transform = 'translateY(110%)';
       el.style.transition = 'transform 0.9s cubic-bezier(0.22,1,0.36,1) ' + (0.1 + i * 0.12) + 's';
@@ -63,7 +63,7 @@
         e.target.classList.remove('in');
       }
     });
-  }, { threshold: 0.2, rootMargin: '0px 0px -25% 0px' });
+  }, { threshold: 0.01, rootMargin: '0px' });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
   /* ---- Stat counters ---- */
@@ -101,6 +101,42 @@
   var statsStrip = document.querySelector('.stats-strip');
   if (statsStrip) statObserver.observe(statsStrip);
 
+  /* Screenshot gallery and accessible native dialog */
+  var dialog = document.getElementById('imageDialog');
+  document.querySelectorAll('.image-open').forEach(function (button) {
+    button.addEventListener('click', function () {
+      document.getElementById('dialogImage').src = button.dataset.image;
+      document.getElementById('dialogImage').alt = button.dataset.caption;
+      document.getElementById('dialogCaption').textContent = button.dataset.caption;
+      dialog.showModal();
+    });
+  });
+  dialog.querySelector('.dialog-close').addEventListener('click', function () { dialog.close(); });
+  dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+  document.querySelectorAll('[data-hr]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var opener = document.querySelector('.image-open');
+      var label = 'MDARJ · ' + (button.dataset.hr === 'ar' ? 'Arabic' : 'English') + ' dashboard prototype with sample data';
+      opener.dataset.image = 'assets/hr-dashboard-' + button.dataset.hr + '.png';
+      opener.dataset.caption = label;
+      opener.querySelector('img').src = opener.dataset.image;
+      opener.querySelector('img').alt = label;
+      document.querySelectorAll('[data-hr]').forEach(function (item) {
+        item.classList.toggle('active', item === button);
+        item.setAttribute('aria-pressed', String(item === button));
+      });
+    });
+  });
+  var sectionObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) document.querySelectorAll('.bottom-nav a').forEach(function(link) {
+        var active = link.hash === '#' + entry.target.id;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
+      });
+    });
+  }, {rootMargin: '-20% 0px -50% 0px'});
+  document.querySelectorAll('section[id]').forEach(function(section) { sectionObserver.observe(section); });
   /* ---- Skill card spotlight ---- */
   document.querySelectorAll('.tilt').forEach(function (card) {
     card.addEventListener('pointermove', function (ev) {
